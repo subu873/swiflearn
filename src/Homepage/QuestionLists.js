@@ -82,9 +82,10 @@ export default class QuestionTable extends React.Component {
         });
     }
 
-    saveQuestionNewDetails() {
-        var scope = this;
-        console.log(scope);
+    saveQuestionNewDetails = (data) => {
+        // Do whatever you want
+        alert(data);
+
     }
 
     render() {
@@ -191,7 +192,7 @@ export default class QuestionTable extends React.Component {
                                         </td>
                                         <td>
                                             <button className='btn btn-primary'
-                                                    onClick={this.saveQuestionNewDetails.bind(this)}>Save
+                                                    onClick={() => this.saveQuestionNewDetails(this.state.QuestionsLists[index].marks)}>Save
                                             </button>
                                         </td>
                                     </tr>
