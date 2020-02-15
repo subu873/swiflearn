@@ -1,0 +1,67 @@
+html, body {
+    width: 100% !important;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+th {
+    background: #dc645d;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    border: 1px solid white;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.heading {
+    color: #f56961;
+    font-size: 21px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    text-align: center;
+}
+
+.company-logo {
+    width: 165px;
+    margin: auto;
+    text-align: center;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 35px;
+}
+
+.box-layout {
+    background: #e7e7e7;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 2px 5px -1px rgba(0, 0, 0, .16);
+    -moz-box-shadow: 0 2px 5px -1px rgba(0, 0, 0, .16);
+    box-shadow: 0 2px 5px -1px rgba(0, 0, 0, .16);
+    padding: 25px 45px 25px 45px;
+    width: 50%;
+    display: block;
+    margin-left: 25%;
+    -moz-transition: all .3s ease-out;
+    -webkit-transition: all .3s ease-out;
+    margin-bottom: 75px;
+    margin-top: 25px;
+}
+
+label {
+    font-weight: 600;
+}

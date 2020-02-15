@@ -1,0 +1,322 @@
+body {
+  margin: 0;
+  margin: 0;
+  padding: 0;
+  font-family: Roboto, sans-serif;
+  height: 100%;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.transaction-details-body {
+  margin-top: 10px;
+}
+
+.transaction-details-scrollable-body {
+  margin-top: 10px;
+  height: 600px;
+  max-height: 600px;
+  overflow-y: scroll;
+}
+
+.transaction-card-table {
+  border: 2px solid #2980b9;
+  border-radius: 15px;
+  margin-bottom: 20px;
+  display: inline-table;
+  width: 100%;
+  padding: 10px;
+}
+
+.transaction-card {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.transaction-card-name {
+  text-align: left;
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.transaction-card-amount {
+  text-align: left;
+  font-size: 16px;
+}
+
+.transaction-card-points {
+  font-size: 17px;
+  text-align: left;
+  color: #27ae60;
+  font-style: italic;
+}
+
+.transaction-card-brand {
+  font-weight: bold;
+  color: #328fec;
+  text-align: right;
+  font-size: 15px;
+}
+
+.transaction-card-brand img {
+  width: 50px;
+  height: 50px;
+}
+
+.transaction-card-date {
+  font-size: 14px;
+  text-align: right;
+}
+
+.transaction-card-status-return {
+  font-size: 15px;
+  text-align: right;
+  color: #ea2027;
+  font-weight: bold;
+}
+
+.transaction-details-container {
+  width: 100%;
+}
+
+.transaction-details-header {
+  margin-top: 3vh;
+}
+
+.transaction-details-title {
+  display: flex;
+  text-align: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.transaction-details-title .btn-back {
+  width: 11%;
+}
+
+.btn-back button {
+  border: none;
+  background: transparent;
+}
+
+.transaction-details-title .txt-title {
+  width: 89%;
+  font-size: 4vw;
+}
+
+.transaction-details-title .txt-title p {
+  margin-left: 11%;
+  border: 2px solid #2980b9;
+  border-radius: 30px;
+  width: 60%;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.transaction-details-buttons {
+  width: 64%;
+  margin: 10px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.transaction-details-buttons .btn-sort button,
+.transaction-details-buttons .btn-filter button {
+  width: 65px;
+  height: 32px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  border: 1px solid #2980b9;
+  border-radius: 10px;
+}
+
+.btn-sort button:hover,
+.btn-filter button:hover {
+  background: #9ec3dc63;
+  box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.75);
+}
+
+.transaction-details-filter-body {
+  display: flex;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-top: 1px solid black;
+}
+
+.transaction-details-filter-left {
+  width: 35%;
+  border-right: 1px solid black;
+}
+
+.transaction-details-filter-right {
+  width: 65%;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  text-align: left;
+}
+
+.transaction-details-filter-right div {
+  margin: 20px;
+}
+
+.transaction-details-filter-header {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  margin-top: 20px;
+  text-align: center;
+  background-color: #dddddd;
+}
+
+.transaction-details-filter-header h2 {
+  margin: 0;
+  padding: 10px;
+}
+
+.transaction-details-filter-footer {
+  display: flex;
+}
+
+.transaction-details-filter-footer button {
+  width: 50%;
+  height: 45px;
+  border: 1px solid black;
+  font-size: 20px;
+  font-weight: 600;
+  background-color: #dddddd;
+}
+
+.transaction-details-sort-container {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: #d9dde0;
+  line-height: 30px;
+}
+
+.line-item-container {
+  overflow-y: scroll;
+  max-height: 630px;
+  height: 580px;
+}
+
+.loyalty-homepage-card {
+  background-color: #ecf0f1;
+  width: 45%;
+  height: 15vh;
+  text-align: center;
+  display: flex;
+  border: 1px solid #2980b9;
+  border-radius: 20px;
+  box-shadow: 0px 0px 7px 1px #000;
+}
+
+.loyalty-homepage-card h3 {
+  margin: auto;
+}
+
+.line-item-card-td {
+  width: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  /* For Desktop: */
+  .transaction-card-name {
+    font-size: 22px;
+    font-weight: bold;
+  }
+  .transaction-card-amount {
+    font-size: 23px;
+  }
+  .transaction-card-points {
+    font-size: 25px;
+  }
+  .transaction-card-brand {
+    font-size: 23px;
+    font-weight: 500;
+  }
+  .transaction-card-brand img {
+    width: 80px;
+    height: 80px;
+  }
+  .transaction-card-date {
+    font-size: 21px;
+  }
+  .transaction-card-status {
+    font-size: 23px;
+  }
+  .transaction-card-status-return {
+    font-size: 22px;
+  }
+  .transaction-card-table {
+    padding-left: 35px;
+    padding-right: 35px;
+  }
+  .transaction-details-buttons .btn-sort {
+    position: relative;
+  }
+  .transaction-details-buttons .btn-sort button,
+  .transaction-details-buttons .btn-filter button {
+    width: 130px;
+    height: 45px;
+  }
+  .transaction-details-title .txt-title p {
+    width: 60%;
+    font-size: 34px;
+    margin-left: 13%;
+    text-align: center;
+  }
+  .btn-back button {
+    width: 60px;
+    cursor: pointer;
+  }
+  .transaction-details-buttons {
+    width: 86%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: flex-end;
+  }
+  .transaction-details-filter-container {
+    margin-left: 10px;
+  }
+  .transaction-details-filter-header {
+    margin-top: 0;
+  }
+  .transaction-details-filter-left {
+    width: 50%;
+  }
+  .transaction-details-filter-right {
+    width: 50%;
+  }
+  .transaction-details-filter-right div {
+    margin: 14px 0;
+  }
+  .transaction-details-sort-container {
+    position: absolute;
+    top: 48px;
+    background-color: #ecf0f1;
+    line-height: 37px;
+    font-size: 21px;
+    left: -130px;
+    width: auto;
+    height: auto;
+    bottom: auto;
+  }
+  .loyalty-homepage-card {
+    height: 22vh;
+  }
+}

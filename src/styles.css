@@ -1,0 +1,99 @@
+* {
+  font-family: sans-serif;
+}
+
+.App {
+  padding-block-start: 2%;
+}
+
+.login {
+  border: 1px solid black;
+  border-radius: 16px;
+
+  padding: 16px;
+  margin: 50px auto;
+  background-color: white;
+  padding-top: 10px;
+  width: 25%;
+}
+
+@media (max-width: 1024px) {
+  .login {
+    width: 65%;
+  }
+}
+
+.getotp {
+  font-size: 16px;
+  height: 30px;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid gray;
+}
+
+input[type='number']::-webkit-inner-spin-button,
+input[type='number']::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+input::-webkit-calendar-picker-indicator {
+  display: none;
+}
+
+input[type='checkbox'] {
+  width: 20px;
+  height: 30px;
+  position: relative;
+  vertical-align: middle;
+  bottom: 1px;
+}
+
+input[placeholder],
+label {
+  color: gray;
+}
+
+.logbutton {
+  margin-top: 10px;
+  float: right;
+  border-radius: 12px;
+  color: gray;
+}
+
+*:focus {
+  outline: none;
+}
+
+.timer {
+  display: inline-block;
+  color: gray;
+}
+
+.border-bottom {
+  border-bottom: 1px solid gray;
+}
+
+.border-none {
+  width: calc(100% - 50px);
+  border: none;
+}
+
+.heading {
+  padding-bottom: 10px;
+  text-align: center;
+}
+
+.box {
+  padding-top: 54px;
+}
+
+.countrycode {
+  font-size: 16px;
+  border: none;
+  width: 50px;
+  border-bottom: 1px solid gray;
+  margin-right: 2px;
+}
