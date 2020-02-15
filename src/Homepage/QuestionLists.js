@@ -83,10 +83,16 @@ export default class QuestionTable extends React.Component {
     }
 
     saveQuestionNewDetails = (data) => {
-        // Do whatever you want
-        alert(data);
+        //data is question id
 
-    }
+        alert(JSON.stringify(this.state.QuestionsLists.filter(function (el) {
+            return (el.id==data)
+        })));
+
+        /*Pass all result in post api so question list will automatic update */
+
+    };
+
 
     render() {
         console.clear();
@@ -192,7 +198,7 @@ export default class QuestionTable extends React.Component {
                                         </td>
                                         <td>
                                             <button className='btn btn-primary'
-                                                    onClick={() => this.saveQuestionNewDetails(this.state.QuestionsLists[index].marks)}>Save
+                                                    onClick={() => this.saveQuestionNewDetails(this.state.QuestionsLists[index].id)}>Save
                                             </button>
                                         </td>
                                     </tr>
