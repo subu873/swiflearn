@@ -80,7 +80,6 @@ export default class QuestionTable extends React.Component {
         this.setState({
             QuestionsLists: newState
         });
-
     }
 
     saveQuestionNewDetails() {
@@ -117,7 +116,7 @@ export default class QuestionTable extends React.Component {
                             <tbody>
                             {this.state.QuestionsLists.map((row, index) => {
                                 return (
-                                    <tr>
+                                    <tr key={this.state.QuestionsLists[index].grade}>
                                         <td>
                                             {this.state.QuestionsLists[index].id}
                                         </td>

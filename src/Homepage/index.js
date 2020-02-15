@@ -4,7 +4,6 @@ import {connect} from 'react-redux'
 import {fetchConcept, fetchQuestions} from './ActionCreator'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import GradeForm from './GradeForm'
-import Concepts from './Concepts'
 import QuestionTable from "./QuestionLists";
 
 
@@ -17,8 +16,7 @@ const Homepage = props => {
                     <img src='https://swiflearn.com/assets/images/logo.png' className='company-logo'/>
                     <h3 className='heading'>Grade Forms with Question Editable</h3>
                 </div>
-                <GradeForm fetchConcept={fetchConcept}/>
-                {/*<Concepts {...props} />*/}
+                <GradeForm fetchConcept={fetchConcept} fetchQuestions={fetchQuestions}/>
                 <QuestionTable fetchQuestions={fetchQuestions}/>
             </div>
         </React.Fragment>
@@ -27,7 +25,7 @@ const Homepage = props => {
 
 const mapStateToProps = state => {
     const {
-        global: {loader, concepts}
+        global: {loader, concepts,}
     } = state
     console.log(loader, concepts);
     return {

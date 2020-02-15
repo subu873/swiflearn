@@ -10,12 +10,14 @@ export default function GradeForm(props) {
     const [concept, setConcept] = useState('')
 
     const onGradeChanged = event => {
-        setGrade(event.target.value)
-        setBoard('')
+        setGrade(event.target.value);
+        setBoard('');
+        setConcept('');
     };
 
     const onBoardChanged = event => {
-        setBoard(event.target.value)
+        setBoard(event.target.value);
+        setConcept('');
         props.fetchConcept({grade, board})
     };
     const onConceptChanged = event => {
