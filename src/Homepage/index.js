@@ -38,7 +38,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
     return {
-        fetchConcept: data => dispatch(fetchConcept(data))
+        fetchConcept: data => dispatch(fetchConcept(data)),
+        fetchQuestions: data => dispatch(fetchQuestions(data))
     }
 };
 
