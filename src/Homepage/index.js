@@ -8,7 +8,7 @@ import QuestionTable from "./QuestionLists";
 
 
 const Homepage = props => {
-    const {fetchConcept, fetchQuestions, loader, concepts} = props
+    const {fetchConcept, fetchQuestions, loader, concepts, questionList} = props
     return (
         <React.Fragment>
             <div className='row'>
@@ -16,8 +16,8 @@ const Homepage = props => {
                     <img src='https://swiflearn.com/assets/images/logo.png' className='company-logo'/>
                     <h3 className='heading'>Grade Forms with Question Editable</h3>
                 </div>
-                <GradeForm fetchConcept={fetchConcept} fetchQuestions={fetchQuestions}/>
-                <QuestionTable fetchQuestions={fetchQuestions}/>
+                <GradeForm concepts={concepts} fetchConcept={fetchConcept} fetchQuestions={fetchQuestions}/>
+                <QuestionTable questionList={questionList} fetchQuestions={fetchQuestions}/>
             </div>
         </React.Fragment>
     )
@@ -25,12 +25,13 @@ const Homepage = props => {
 
 const mapStateToProps = state => {
     const {
-        global: {loader, concepts,}
+        global: {loader, concepts, questionList}
     } = state
     console.log(loader, concepts);
     return {
         loader,
-        concepts
+        concepts,
+        questionList
     }
 };
 
